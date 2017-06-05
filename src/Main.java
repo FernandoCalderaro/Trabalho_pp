@@ -30,6 +30,10 @@ public class Main {
             System.out.println();
         }
 
+        Personagem p = new Mago("Erza Scarlet");
+        Mago mago = (Mago) p;
+        mago.invisibilidade();
+
         /*Personagem p = new Cavaleiro("Ichigo");
         Jogo vida = new Jogo();
         vida.executaAcoesComuns();*/
