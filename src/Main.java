@@ -8,20 +8,27 @@ public class Main {
 
         ArrayList<Personagem> personagens = new ArrayList<Personagem>();
 
-        Personagem cavaleiro = new Cavaleiro("Seya");
-        personagens.add(cavaleiro);
+        Personagem cavaleiro1 = new Cavaleiro("Seya");
+        personagens.add(cavaleiro1);
         Personagem cavaleiro2 = new Cavaleiro("Shiryu");
         personagens.add(cavaleiro2);
 
-        Personagem mago = new Mago("Patolino");
-        personagens.add(mago);
+        Personagem dragao1 = new Dragao("Dragnel");
+        personagens.add(dragao1);
+        Personagem dragao2 = new Dragao("Dragonair");
+        personagens.add(dragao2);
+
+        Personagem mago1 = new Mago("Patolino");
+        personagens.add(mago1);
         Personagem mago2 = new Mago("Natsu");
         personagens.add(mago2);
 
-        Personagem dragao = new Dragao("Dragnel");
-        personagens.add(dragao);
-        Personagem dragao2 = new Dragao("Dragonair");
-        personagens.add(dragao2);
+        Jogo jogo = new Jogo();
+
+        for(Personagem it: personagens){
+            jogo.executaAcoesComuns(it);
+            System.out.println();
+        }
 
         /*Personagem p = new Cavaleiro("Ichigo");
         Jogo vida = new Jogo();
